@@ -1,0 +1,236 @@
+/*---------------*/
+/* Imagen header */
+/*---------------*/
+.img-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -52px;
+    background-color: black;
+    background-image: url(../images/slider5.jpg);
+
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-header::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.img-header h2{
+    font-family: Prata;
+    color: #fff;
+    z-index: 1;
+}
+
+.img-header p{
+    color: #c9a050;
+    font-size: 13px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.img-header p a{
+    color: #fff;
+    font-size: 13px;
+    border-bottom: 1px solid #fff ;
+
+}
+
+main{
+    position: relative;
+    padding: 10px 8%;
+
+}
+
+.btn-up{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 32px;
+    background-color: #ccc;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 50px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.btn-up:hover{
+    background-color: #131313;
+    color: #fff;
+}
+
+/*--------------*/
+/* Acerca de    */
+/*--------------*/
+.content-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.imgcircle{
+    border: 5px #c9a050 solid;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+}
+
+.content-flex p{
+    text-align: justify;
+}
+
+/*--------------*/
+/* Que opinan   */
+/*--------------*/
+.content{
+    margin: 50px 0px;
+}
+
+.content h3{
+    text-align: center;
+    font-family: Prata;
+    font-size: 32px;
+    margin: 10px 0px;
+}
+
+.content-tira-client{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card h4{
+    font-family: Prata;
+}
+
+.frente, .dorso{         /*Separo con la coma para configurar el estilo a los dos elemantos por igual*/
+    position: absolute;
+    backface-visibility: hidden; /*Define si la cara posterior es visible*/
+    transition: transform 0.5s;  /*Es el tiempo que va a tardar en hacer el efecto*/
+    width: 100%;
+    height: 100%;
+}
+
+/* FRENTE*/
+.frente{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    color: white;
+    transform: rotateY(0deg); /*Gira 0 grados*/
+}
+
+#frente-pilar{
+    background-image: url(../images/pilar.jpg);
+}
+
+#frente-ivana{
+    background-image: url(../images/ivana.jpg);
+}
+
+#frente-anahi{
+    background-image: url(../images/anahi.jpg);
+}
+
+#frente-maria{
+    background-image: url(../images/maria.jpg);
+}
+
+/* DORSO*/
+.dorso{
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    transform: rotateY(-180deg); /*Gira 180 grados, queda la imagen invertida*/
+}
+
+.card:hover .frente {
+    transform: rotateY(180deg); /*Gira 180 grados hacia la izquierda*/
+}
+
+.card:hover .dorso {
+    transform: rotateY(0deg); /*Gira 0 grados hacia la izquierda*/
+}
+
+/*--------------*/
+/* Boton scroll */
+/*--------------*/
+.btn-up{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 32px;
+    background-color: #ccc;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 50px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.btn-up:hover{
+    background-color: #131313;
+    color: #fff;
+}
+
+@media screen and (max-width: 1250px) {
+    .content-tira-client{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .content-flex{
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+}
+
+@media screen and (max-width: 576px) {
+    .content-tira-client{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 50px;
+    }
+}

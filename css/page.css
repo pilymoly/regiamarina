@@ -1,0 +1,53 @@
+/*---------------*/
+/* Imagen header */
+/*---------------*/
+.img-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -52px;
+    background-color: black;
+    background-image: url(../images/slider4.jpg);
+
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-header::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.img-header h2{
+    font-family: Prata;
+    color: #fff;
+    z-index: 1;
+}
+
+.img-header p{
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.img-header p a{
+    color: #fff;
+    font-size: 12px;
+    border-bottom: 1px solid #fff ;
+}
+
+main{
+    position: relative;
+    padding: 10px 8%;
+
+}

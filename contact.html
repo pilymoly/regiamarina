@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regia Marina Italiana 3D .::. Contacto</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/icomoon/style.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <div class="loader-content">
+        <div class="loader"><img src="images/loader.gif" width="30px" alt="Cargando...">Enviando correo...</div>
+    </div>
+    <div class="top-header">
+        <div class="top-left">
+            <a href="tel:+541199999999"><span class="icon-phone"></span> 11-9999-9999</a>
+            <a href="mailto:correo@ejemplo.com"><span class="icon-envelop"></span> nombre@dominio.com</a>
+        </div>
+        <div class="top-right">
+            <a href="https://www.facebook.com" target="_blank"><span class="icon-facebook2"></span></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><span class="icon-twitter"></span></a>
+            <a href="https://www.instagram.com" target="_blank"><span class="icon-instagram"></span></a>
+            <a href="https://www.linkedin.com" target="_blank"><span class="icon-linkedin"></span></a>
+            <a href="https://www.youtube.com" target="_blank"><span class="icon-youtube"></span></a>
+            <a href="#"><span class="icon-heart"></span></a>
+            <a href="#"><span class="icon-cart"></span></a>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">Regia Marina Italiana 3D</div>
+            <div id="menu">
+                <div class="logoResponsive oculto" id="titResponsive">Regia Marina Italiana 3D</div>
+                <hr class="hrResponsive oculto">
+                <ul class="menu">
+                    <li><a class="mnu underline-link" href="index.html">INICIO</a></li>
+                    <li><a class="mnu underline-link" href="about.html">ACERCA DE</a></li>
+                    <li><a class="mnu underline-link" href="galery.html">GALERIA</a></li>
+                    <li><a class="mnu underline-link" href="#">CONTACTO</a></li>
+                </ul>
+            </div>
+            <button class="btn-mnu" onclick="eventoMenu()" id="btnMnu">≡</button>
+        </nav>
+    </header>
+    <div class="img-header">
+        <h2>CONTACTO</h2>
+        <p><a href="index.html">Inicio</a> / Contacto</p>
+    </div>
+    <main>
+        <section class="panel-form">
+            <form id="contact-form">
+                <h3>Contactenos</h3>
+                <div class="form-grid">
+                    <div class="panel-left">
+                        <input type="text" class="form-input" id="nombre" name="nombre" placeholder="Nombre completo" value="">
+                        <input type="text" id="email" name="email" class="form-input" placeholder="Email" value="">
+                        <div class="text-red" id="mensaje-email" style="display:none;">Debe ingresar un correo valido</div>
+                        <input type="text" id="subject" name="subject" class="form-input" placeholder="Asunto" value="">
+                        <input type="text" id="phone" name="phone" class="form-input" placeholder="Teléfono" value="">
+                        <div class="text-red" id="mensaje-valida"></div>
+                    </div>
+                    <div class="panel-right">
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Mensaje"></textarea>
+                    </div>
+                </div>
+                <button id="enviar" class="btn btn-send" type="submit">Enviar</button>
+            </form>
+        </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13136.234213868223!2d-58.396679554339784!3d-34.602680847859276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1697665126361!5m2!1ses-419!2sar"
+            width="100%" height="300" style="border:0; margin: 50px 0px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <section class="section-newsletter">
+            <div class="section-header">
+                <h3 class="text-title">Reciba nuestras novedades</h3>
+            </div>
+            <form id="form-subscribe">
+                <div class="content-subscribe">
+                    <input type="text" name="input-subscribe"
+                        id="input-subscribe" placeholder="Ingrese su dirección de correo"
+                        class="input-subscribe">
+                    <button class="btn-subscribe" type="submit"><span>SUBSCRIBIR</span></button>
+                </div>
+                <div class="text-red" id="mensaje-subscribe"></div>
+            </form>
+        </section>
+        <div class="btn-up" id="scrollBtn"><i class="fa-solid fa-chevron-up"></i></div>
+    </main>
+    <footer>
+        <div class="content-footer">
+            <div class="column-footer">
+                <h3>Acerca de</h3>
+                <div class="logo-footer">Regia Marina Italiana 3D</div>
+            </div>
+            <div class="column-footer">
+                <h3>Enlaces Utiles</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="galery.html">Galeria</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="column-footer">
+                <h3>Mi cuenta</h3>
+                <ul>
+                    <li><a href="">Acceso</a></li>
+                    <li><a href="">Registrarse</a></li>
+                    <li><a href="">Lista de deseos</a></li>
+                    <li><a href="">carrito de compra</a></li>
+                </ul>
+            </div>
+            <div class="column-footer">
+                <h3>Datos de contacto</h3>
+                <ul>
+                    <li><a href="mailto:correo@ejemplo.com"><span class="icon-envelop"></span> nombre@dominio.com</a></li>
+                    <li><a href="tel:+541199999999"><span class="icon-phone"></span> 11-9999-9999</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=11-9999-9999"><span class="icon-whatsapp"></span> 11-9999-9999</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="link-social">
+            <div>
+                <a href="https://www.facebook.com" target="_blank"><span class="icon-facebook2"></span></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><span class="icon-twitter"></span></a>
+                <a href="https://www.instagram.com" target="_blank"><span class="icon-instagram"></span></a>
+                <a href="https://www.linkedin.com" target="_blank"><span class="icon-linkedin"></span></a>
+                <a href="https://www.youtube.com" target="_blank"><span class="icon-youtube"></span></a>
+            </div>
+            <div>© Regia Marina Italiana 3D - 2023 | Todos los derechos reservados</div>
+        </div>
+    </footer>
+
+    <script src="js/header-footer.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

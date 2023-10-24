@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regia Marina Italiana 3D</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/icomoon/style.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="top-header">
+        <div class="top-left">
+            <a href="tel:+541199999999"><span class="icon-phone"></span> 11-9999-9999</a>
+            <a href="mailto:correo@ejemplo.com"><span class="icon-envelop"></span> nombre@dominio.com</a>
+        </div>
+        <div class="top-right">
+            <a href="https://www.facebook.com" target="_blank"><span class="icon-facebook2"></span></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><span class="icon-twitter"></span></a>
+            <a href="https://www.instagram.com" target="_blank"><span class="icon-instagram"></span></a>
+            <a href="https://www.linkedin.com" target="_blank"><span class="icon-linkedin"></span></a>
+            <a href="https://www.youtube.com" target="_blank"><span class="icon-youtube"></span></a>
+            <a href="#"><span class="icon-heart"></span></a>
+            <a href="#"><span class="icon-cart"></span></a>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo" onclick="window.location.href='index.html';">Regia Marina Italiana 3D</div>
+            <div id="menu">
+                <div class="logoResponsive oculto" id="titResponsive">Regia Marina Italiana 3D</div>
+                <hr class="hrResponsive oculto">
+                <ul class="menu">
+                    <li><a class="mnu underline-link" href="#">INICIO</a></li>
+                    <li><a class="mnu underline-link" href="about.html">ACERCA DE</a></li>
+                    <li><a class="mnu underline-link" href="galery.html">GALERIA</a></li>
+                    <li><a class="mnu underline-link" href="contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <button class="btn-mnu" onclick="eventoMenu()" id="btnMnu">≡</button>
+        </nav>
+    </header>
+    <div class="carrousel">
+        <ul id="tira-sliders">
+            <li id="li-slider1" class="li-slider">
+                <div class="oscurecer"></div>
+            </li>
+            <li id="li-slider2" class="li-slider">
+                <div class="oscurecer"></div>
+            </li>
+            <li id="li-slider3" class="li-slider">
+                <div class="oscurecer"></div>
+            </li>
+            <li id="li-slider4" class="li-slider">
+                <div class="oscurecer"></div>
+            </li>
+            <li id="li-slider5" class="li-slider">
+                <div class="oscurecer"></div>
+            </li>
+            <li id="li-slider6" class="li-slider">
+                <div class="oscurecer"></div>
+            </li>
+            <li id="li-slider11">
+                <div class="oscurecer"></div>
+            </li>
+        </ul>
+        <button class="btn-slider" id="btnLeft"><</button>
+        <button class="btn-slider" id="btnRight">></button>
+        <div class="content-slider">
+            <h5>Bienvenido</h5>
+            <h1>Maquetas y planos de <span>Destructores Italianos</span>.</h1>
+            <p>Importante investigación histórica y fotográfica, representada en planos y maquetados 3d desarrollada en Argentina.</p>
+            <button class="btn btn-leermas" onclick="window.location.href='galery.html'">LEER MAS <span class="icon-play3"></span></button>
+        </div>
+    </div>
+    <main>
+        <section class="service-type">
+            <div class="card-service border-right border-bottom" onclick="irA('galery.html')">
+                <div class="box-service">
+                    <div class="icon-service"><img class="img-service" src="images/shipcircle.fw.png" alt=""></div>
+                    <div class="text-service">
+                        <p>Galería de</p>
+                        <h6>Barcos</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="card-service border-right border-bottom" onclick="irA('galery.html')">
+                <div class="box-service">
+                    <div class="icon-service"><img class="img-service" src="images/weaponcircle.fw.png" alt=""></div>
+                    <div class="text-service">
+                        <p>Galería de</p>
+                        <h6>Armas</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="card-service border-right border-bottom2">
+                <div class="box-service">
+                    <div class="icon-service"><img class="img-service" src="images/bookscircle.fw.png" alt=""></div>
+                    <div class="text-service">
+                        <p>Explore la</p>
+                        <h6>Bibliografía</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="card-service">
+                <div class="box-service">
+                    <div class="icon-service"><img class="img-service" src="images/penrulercircle.fw.png" alt=""></div>
+                    <div class="text-service">
+                        <p>Nuestros</p>
+                        <h6>Diseños</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="column-2">
+                <h2>Algunas Palabras Sobre Mí</h2>
+                <p>Este es un trabajo de investigación histórica y fotográfica, un trabajo realizado en Argentina. En él se
+                    basan todos los diseños y dibujos necesarios para realizar este sitio. Estoy a 14000Km de las
+                    principales fuentes de investigación y datos, y sólo pude explorar sobre la bibliografía e imágenes
+                    disponibles en Argentina.</p>
+                <button class="btn btn-main" onclick="window.location.href='about.html';">Leer Más...</button>
+            </div>
+            <div class="column-2 center">
+                <img class="imgcircle" src="images/acercade.jpg" alt="">
+            </div>
+        </section>
+        <div class="section-header">
+            <h3 class="text-title">Nuestros trabajos</h3>
+        </div>
+        <section class="content-galery">
+            <div class="img-fadeInLeft">
+                <a href="galery.html#panel-4"><figure><h4>&nbsp;Sella</h4></figure></a>
+            </div>
+            <div class="img-fadeInDown">
+                <a href="galery.html#panel-1"><figure><h4>&nbsp;Dardo Prima Serie</h4></figure></a>
+            </div>
+            <div class="img-fadeInDown2">
+                <a href="galery.html#panel-6"><figure><h4>&nbsp;Turbine</h4></figure></a>
+            </div>
+            <div class="img-fadeInRight">
+                <a href="galery.html#panel-2"><figure><h4>&nbsp;Navigatori Serie I</h4></figure></a>
+            </div>
+            <div class="img-fadeInUp">
+                <a href="galery.html#panel-3"><figure><h4>&nbsp;Oriani Classe Poeti</h4></figure></a>
+            </div>
+            <div class="img-fadeInRight2">
+                <a href="galery.html#panel-5"><figure><h4>&nbsp;Soldati Prima Serie</h4></figure></a>
+            </div>
+        </section>
+
+        <section class="content-flex">
+            <div class="panel-video-text">
+                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F100066864261058%2Fvideos%2F177020330279201%2F&show_text=false&width=100%&t=0" width="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+            <div class="panel-video-text">
+                <h3>Vídeo submarino del naufragio del destructor Da Noli.</h3>
+                <p>Vídeo submarino del naufragio del destructor Da Noli. Sumérgete en los restos del destructor Da Noli y muestra cómo se exploró el puente y su interior, 74 años después de su hundimiento en el Estrecho de Bonifacio. Vídeo submarino realizado por Global Underwater Explorers dirigido por Mario Arena y Luca Palezza.</p>
+            </div>
+        </section>
+
+        <section class="section-newsletter">
+            <div class="section-header">
+                <h3 class="text-title">Reciba nuestras novedades</h3>
+            </div>
+            <form id="form-subscribe">
+                <div class="content-subscribe">
+                    <input type="text" name="input-subscribe"
+                        id="input-subscribe" placeholder="Ingrese su dirección de correo"
+                        class="input-subscribe">
+                    <button class="btn-subscribe" type="submit"><span>SUBSCRIBIR</span></button>
+                </div>
+                <div class="text-red" id="mensaje-subscribe"></div>
+            </form>
+        </section>
+
+        <div class="btn-up" id="scrollBtn"><i class="fa-solid fa-chevron-up"></i></div>
+
+    </main>
+    <footer>
+        <div class="content-footer">
+            <div class="column-footer">
+                <h3>Acerca de</h3>
+                <div class="logo-footer">Regia Marina Italiana 3D</div>
+            </div>
+            <div class="column-footer">
+                <h3>Enlaces Utiles</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="galery.html">Galeria</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="column-footer">
+                <h3>Mi cuenta</h3>
+                <ul>
+                    <li><a href="">Acceso</a></li>
+                    <li><a href="">Registrarse</a></li>
+                    <li><a href="">Lista de deseos</a></li>
+                    <li><a href="">carrito de compra</a></li>
+                </ul>
+            </div>
+            <div class="column-footer">
+                <h3>Datos de contacto</h3>
+                <ul>
+                    <li><a href="mailto:correo@ejemplo.com"><span class="icon-envelop"></span> nombre@dominio.com</a></li>
+                    <li><a href="tel:+541199999999"><span class="icon-phone"></span> 11-9999-9999</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=11-9999-9999"><span class="icon-whatsapp"></span> 11-9999-9999</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="link-social">
+            <div>
+                <a href="https://www.facebook.com" target="_blank"><span class="icon-facebook2"></span></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><span class="icon-twitter"></span></a>
+                <a href="https://www.instagram.com" target="_blank"><span class="icon-instagram"></span></a>
+                <a href="https://www.linkedin.com" target="_blank"><span class="icon-linkedin"></span></a>
+                <a href="https://www.youtube.com" target="_blank"><span class="icon-youtube"></span></a>
+            </div>
+            <div>© Regia Marina Italiana 3D - 2023 | Todos los derechos reservados</div>
+        </div>
+    </footer>
+    <script src="js/header-footer.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
