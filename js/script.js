@@ -63,9 +63,7 @@ const img5=document.querySelector(".img-fadeInUp");
 const img6=document.querySelector(".img-fadeInRight2");
 
 function isElementInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    console.log('rect.top=>',rect.top);
-    
+    const rect = element.getBoundingClientRect();   
     return (
         rect.top <= 700 &&
         rect.left >= 0 //&&
