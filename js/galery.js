@@ -6,7 +6,7 @@ const mnuProduct = document.querySelector(".mnu-product");
 
 async function getMenuProduct() {
     try {
-        const response = await fetch("http://www.efe-uno.com.ar/apis/api-regia-marina/regia-marina.php");
+        const response = await fetch("https://www.efe-uno.com.ar/apis/api-regia-marina/regia-marina.php");
         const data = await response.json();
         //console.log(data);
 
@@ -31,7 +31,7 @@ const contentProductos = document.querySelector("#content-productos");
 
 async function getProductos() {
     try {
-        const response = await fetch("http://www.efe-uno.com.ar/apis/api-regia-marina/regia-marina.php");
+        const response = await fetch("https://www.efe-uno.com.ar/apis/api-regia-marina/regia-marina.php");
         const data = await response.json();
         //console.log(data);
 
