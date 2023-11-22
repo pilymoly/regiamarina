@@ -23,7 +23,7 @@ formulario.addEventListener("submit", (event) => {
         data.append('asunto', subject.value);
         data.append('mensaje', message.value);
         data.append('from', 'nrivarola@gmail.com');
-        fetch('http://www.efe-uno.com.ar/apis/api-mails/efeunoMails.php',
+        fetch('https://www.efe-uno.com.ar/apis/api-mails/efeunoMails.php',
         {
             method: 'POST', 
             body: data,
